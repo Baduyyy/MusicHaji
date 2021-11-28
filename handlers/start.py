@@ -29,30 +29,38 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.mention} 😉️!</b>
 
-I'm The Ngarumpi Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat!
+I'm The Nexa Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat!
 
 Also I have more features! Please hit on **/help** to see them!
 
 Made with ❤️ **@{UPDATES_CHANNEL}**""",
         reply_markup=InlineKeyboardMarkup(
-            [ 
+            [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-                ],[
+                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    )
+                ],
+                [
                     InlineKeyboardButton(
-                        "Commands​​", callback_data="cbcmds"
+                        "ʜᴇʟᴘ ᴍᴇɴᴜ", callback_data="cbhelpmenu"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ᴏᴡɴᴇʀ ʙᴏᴛ", url="https://t.me/Xbarok"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/{GROUP_SUPPORT}")
-                ],[
-                    InlineKeyboardButton(
-                        "❓ Basic Guide​", callback_data="cbhowtouse"
+                        "ɢʀᴏᴜᴘ", url="https://t.me/NgarumpiSupport"
                     )
                 ]
             ]
-        ),
-     disable_web_page_preview=True
+        )
     )
 
 
@@ -71,38 +79,38 @@ async def help(_, message: Message):
         parse_mode="markdown"
     )
     await message.reply_text(
-        f"""<b>Hi {message.from_user.mention} 😉️!</b>
+        f"""<b>Hi {message.from_user.mention}!</b>
 
-**Here is the Help Menu For This Bot 😊!**""",
+**Here is the Help Menu For This Bot!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🤔 How To Use Me 🤔", callback_data="cbhowtouse"
+                        "ʜᴏᴡ ᴛᴏ ᴜꜱᴇ ᴍᴇ", callback_data="cbhowtouse"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Get Lyrics", callback_data="cbgetlyrics"
+                        "ɢᴇᴛ ʟʏʀɪᴄꜱ", callback_data="cbgetlyrics"
                     ),
                     InlineKeyboardButton(
-                        "YT Search", callback_data="cbytsearch"
+                        "ꜱᴇᴀʀᴄʜ", callback_data="cbytsearch"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Music Downloader", callback_data="cbmusicdown"
+                        "ᴍᴜꜱɪᴄ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ", callback_data="cbmusicdown"
                     ),
                     InlineKeyboardButton(
-                        "YT Video Downloader", callback_data="cbytviddown"
+                        "ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ", callback_data="cbytviddown"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "Delete Commands", callback_data="cbdelcmds"
+                        "ᴅᴇʟᴇᴛᴇ ᴄᴏᴍᴍᴀɴᴅꜱ", callback_data="cbdelcmds"
                     ),
                     InlineKeyboardButton(
-                        "Quotely", callback_data="cbquotely"
+                        "Qᴜᴏᴛᴇʟʏ", callback_data="cbquotely"
                     )
                 ]
             ]
@@ -142,12 +150,12 @@ Made with ❤️ by **@{UPDATES_CHANNEL}**""",
             [
                 [
                     InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "Group", url="https://t.me/NgarumpiSupport"
                     )
                 ]
             ]
@@ -184,15 +192,15 @@ Enjoy 😌️❤️!""",
             [
                 [
                     InlineKeyboardButton(
-                        "↗️ Share Voice Chat Invitation ↗️", url=f"https://t.me/share/url?url=**Join%20Our%20Group%20Voice%20Chat%20😉%20%20{VC_LINK}%20❤️**"
+                        "Share Voice Chat Invitation", url=f"https://t.me/share/url?url=**Join%20Our%20Group%20Voice%20Chat%20😉%20%20{VC_LINK}%20❤️**"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔰️ Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "Group", url="https://t.me/NgarumpiSupport"
                     )
                 ]
             ]
