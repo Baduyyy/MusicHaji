@@ -29,38 +29,30 @@ async def start(_, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.mention} 😉️!</b>
 
-I'm The Nexa Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat 😇!
+I'm The Ngarumpi Music Bot! A Powerful Bot to Play Music in Your Group Voice Chat!
 
-Also I have more features! Please hit on **/help** to see them 😘!
+Also I have more features! Please hit on **/help** to see them!
 
 Made with ❤️ **@{UPDATES_CHANNEL}**""",
         reply_markup=InlineKeyboardMarkup(
-            [
+            [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
-                    )
-                ],
-                [
+                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                ],[
                     InlineKeyboardButton(
-                        "👮‍♂️ Help Menu 👮‍♂️", callback_data="cbhelpmenu"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "📦 Source Code 📦", url="https://github.com/Itz-fork/Callsmusic-Plus"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "Commands​​", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "Support", url=f"https://t.me/{GROUP_SUPPORT}")
+                ],[
+                    InlineKeyboardButton(
+                        "❓ Basic Guide​", callback_data="cbhowtouse"
                     )
                 ]
             ]
-        )
+        ),
+     disable_web_page_preview=True
     )
 
 
