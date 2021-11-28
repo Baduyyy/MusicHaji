@@ -63,31 +63,30 @@ Made with ❤️ **@{UPDATES_CHANNEL}**""",
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add Me To Your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                        "➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👮‍♂️ Help Menu 👮‍♂️", callback_data="cbhelpmenu"
+                        "ʜᴇʟᴘ ᴍᴇɴᴜ", callback_data="cbhelpmenu"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "📦 Source Code 📦", url="https://github.com/Itz-fork/Callsmusic-Plus"
+                        "ᴏᴡɴᴇʀ ʙᴏᴛ", url="https://t.me/Xbarok"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔰️ My Update Channel 🔰️", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                     InlineKeyboardButton(
-                        "⚜️ Support Group ⚜️", url="https://t.me/Nexa_bots"
+                        "ɢʀᴏᴜᴘ", url="https://t.me/NgarumpiSupport"
                     )
                 ]
             ]
         )
-    )
-    
+    )    
 
 # Help Callback Menu
 
