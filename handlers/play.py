@@ -134,7 +134,7 @@ async def nplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    ydl_opts = {"format": "bestaudio[ext=m4a]"}
+    ydl_opts = {"format": "bestaudio/best"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         url = f"https://youtube.com{results[0]['url_suffix']}"
